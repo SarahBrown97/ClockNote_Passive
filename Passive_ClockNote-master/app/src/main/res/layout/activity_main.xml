@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="235dp"
+        android:background="@android:color/darker_gray"
+        android:scrollbars="vertical"
+        />
+
+    <EditText
+        android:id="@+id/edittext_line_1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="189dp"
+        android:hint="Event Name" />
+
+    <EditText
+        android:id="@+id/edittext_line_2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginBottom="134dp"
+        android:hint="From Time(00:00)"
+        android:inputType="time"/>
+
+    <Button
+        android:id="@+id/button_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/edittext_line_1"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@id/edittext_line_1"
+        android:layout_toRightOf="@id/edittext_line_1"
+        android:text="insert" />
+
+    <EditText
+        android:id="@+id/totime"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="448dp"
+        android:layout_marginEnd="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginBottom="74dp"
+        android:ems="10"
+        android:hint="To Time(00:00)"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="date(mm/dd/yyyy)"
+        android:inputType="date" />
+
+</RelativeLayout>
